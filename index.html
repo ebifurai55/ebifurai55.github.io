@@ -1,497 +1,242 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-
-    <title>石垣島ITブートキャンプ</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Mailform Pro 4 CSS -->
-    <link rel="stylesheet" href="mfp.statics/mailformpro.css" type="text/css" />
-
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="js/bootstrap.js" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/grayscale.css" rel="stylesheet">
-    <!-- 独自のCSS。被らないように独自のClassNameを入れてます -->
     <link href="style1.css" rel="stylesheet">
-    <!-- fontawesome -->
-
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-
-
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-<div class="wrap">
-
-
-        <!-- Navigation -->
-        <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> 
-                        <i class="fa fa-bars white"></i>
-
-                    </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">
-                        <!-- <i class="fa fa-desktop"></i> -->　石垣島ITブートキャンプ
-                    </a>
-
+<body id="page-top" data-spy="scroll" data-target="navbar-fixed-top">
+    <nav id="about" class="navbar navbar-inverse navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <a href="#page-top" class="navbar-brand page-scroll">Tabaco</a>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <span class="sr-only">メニュー</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="nav_target">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li><a class="page-scroll" href="#gai">タバコの害</a></li>
+                    <li><a class="page-scroll" href="#iqos">電子タバコICOS</a></li>
+                    <li><a class="page-scroll" href="#jptabaco">日本の電子タバコ</a></li>
+                    <li><a class="page-scroll" href="#kakaku">価格</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="page-top">
+        <div class="intro">
+            <div class="intoro-body">
+                <div class="container">
+                    <div class="row">
+                        <!-- <br>
+          <br> -->
+                        <!-- <div class="col-md-6 col-md-offset-4"> -->
+                        <h1 class="title text-center">タバコ・ホリック</h1>
+                        <!-- </div> -->
+                        <div class="gaiyou">タバコは百害あって一理無し？タバコの有用性について、最近のタバコについて語りたいと思います。</div>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
                 </div>
-        
-                <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                        <li class="hidden">
-                            <a href="#page-top"></a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about">ITブートキャンプとは</a>
-                        </li>
-                         <li>
-                            <a class="page-scroll" href="#about2">こんな人に</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#about3">卒業後の未来</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#contact">カリキュラム</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="#download2">FAQ</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="mailto:info@cajon.co.jp"><i class="fa fa-envelope-o"></i> メール</a>
-                        </li>
-                        <li>
-                            <a class="page-scroll" href="tel:0343309320"><i class="fa fa-phone"></i> お電話</a>
-                        </li>
-                       
-                    </ul>
-                </div>
-                <!-- /.navbar-collapse -->           <!-- /.navbar-collapse -->
-          </div>
-        <!-- /.container -->
-        </nav>
-
-
-
-    <!-- Intro Header -->
-    <header class="intro" id="about">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-
-
-<BR>
-<BR>
-
-
-    <ul class="snsb">
-        <li>
-            <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://cajon.co.jp/boot_camp2/">tweet</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-            </li>
-            <li>
-              <div class="fb-like" data-href="http://cajon.co.jp/boot_camp2/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-            </li>
-    </ul>
-<BR>
-<BR>
-
-
-
-        <h1 class="brand-heading shadow">石垣島IT<BR>BOOTCAMP</h1>
-            <p class="intro-text intro-shadow">「即戦力になるエンジニア」「実力のあるフリーランス」を育成。
-            通常のスクールなら３〜４ヶ月かけるカリュキュラムを凝縮させた短期集中プログラム</p>
-            <p><!-- <a href="" class="myButton"> -->
-            <a class="page-scroll myButton" href="form.html">今すぐエントリー</a></p>
-
-            <a href="#about" class="btn btn-circle page-scroll">
-                <i class="fa fa-angle-double-down animated"></i></a>
             </div>
-            </div>
-            </div>
-            </div>
-<!--wrap--></div>
+        </div>
     </header>
-
-    <!-- About Section -->
-    <div class="about2_bg">
-    <section id="about2" class="container content-section text-center  bg-color-shiro">
-        
-        <h2 class="ookii">こんな人に</h2>
+    <section id="gai">
+        <h1 class="taitorumoji text-center">タバコの害</h1>
+        <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                <h4>挫折した経験がある</h4>
-                <div class="kadomaru">
-                <img src="sozai/Fotolia_79217852_Subscription_Monthly_M.jpg">
-                </div>
-                <p>多くの人が１度は挫折しています。
-                英語の学習と似ています。
-                英語は授業を聞いているだけでは話せません。
-                同じようにコーディングもとにかく作ることが重要です。
-                とにかく集中できる環境でひたすら作りまくる。
-                気がつけば、きっと1人前のエンジニアになっています！
-                </p>
+                    <h2>タバコの中毒物質</h2>
+                    <img class="gazou" src="sozai/normal1.jfif">
+                    <p>タバコを吸ううえでかかせない、ニコチン。このニコチンには高い依存性があり、麻薬より 強いとされています。一般的にカフェイン→アルコール→コカイン→ヘロイン→ニコチンとなっています。またタバコは3mgから4mgのニコチン量を摂取します。成人の致死量は30mgから60mgです。一度に多くのニコチンを摂取するのは危険です。
+                    </p>
                 </div>
                 <div class="col-md-4">
-                <h4>即戦力になる実力を身につけたい</h4>
-                <div class="kadomaru">
-                <img src="sozai/Fotolia_71274235_Subscription_Monthly_M.jpg">
-                </div>
-                <p>WEB業界は深刻なエンジニア不足です。
-                日本中の企業があなたの活躍を待っています。
-                企業の欲してる最先端のエンジニアのスキルは、
-                石垣島ITブートキャンプで身に付けることができます。</p>
+                    <h2>全てが黄色くなるタール</h2>
+                    <img class="gazou" src="sozai/2014121110.jpg">
+                    <p>タバコにはタールが含まれます。タバコを吸った時にフィルターに付着する茶色い物体、それがタールです。タールには数多くの発がん性物質があり、タールは着色され体内にたまるとされています。 なかなか禁煙できずにタールの量を減らすという事もあるかと思いますが、それはあまり効果がありません。
+                    </p>
                 </div>
                 <div class="col-md-4">
-                <h4>自由に働きたい</h4>
-                <div class="kadomaru">
-                <img src="sozai/Fotolia_62121166_Subscription_Monthly_M.jpg">
-                </div>
-                <p>
-                PC１台さえあれば、世界のどこにいても好きな時間に
-                好きな場所で自由に仕事ができる。だけど、高収入
-                。そんなフリーランスのエンジニアは世界中にいます。
-                誰にも縛られない生活を体験したい方は、市場価値
-                の高い実力を身につける必要があります。
-                </p>
+                    <h2>吸い過ぎによる不快感</h2>
+                    <img class="gazou" src="sozai/normal.jfif.jpg">
+                    <p>通常、肺へ吸い込んだ酵素はヘモグロビンと結合します。そして全身へと行き渡ります。しかし、この一酸化炭素はヘモグロビンと結合して、酸素を全身に行き渡らないようにします。タバコの吸い過ぎで気持ち悪くなるのは一酸化炭素のせいだと言われています。</p>
                 </div>
             </div>
-      </div>
-        
+        </div>
     </section>
-
-    <!-- Download Section -->
-    <div class="about3_bg">
-    <section id="about3" class="content-section text-center bg-color-shiro">
-          <div class="about3_text">
+    <section id="iqos">
+        <div class="backshiro">
+            <h1 class="taitorumoji text-center">電子タバコ「IQOS」</h1>
             <div class="container">
-                <h2>卒業後の未来<br>３つの道を用意</h2>
-                <div class="col-md-4">
-                   <h4>そのまま石垣島で</h4>
-                   <div class="maru">
-                   <img src="sozai/tobu_css.png">
-                   </div>
-                   <h4>サポートメンバーとして。<br>
-                    また、業務委託でお金をもらうことも</h4>
-                    <p><br>島の素晴らしい環境下で、今度はITブートキャンプのサポートをする側に。
-                      もちろん、<span class="word-yellow">スタッフとしての給料をお支払いします。</span>
-                      また、弊社からweb制作の案件を業務委託としてあなた<span class="word-yellow">個人が受託することが可能</span>です。
-                    お金を貰いながら実務経験を積むことができます。例）1ヶ月の報酬 30万円
-                    </p>
-                    
-                </div>
-
-                <div class="col-md-4">
-                   <h4>フリーランスとして</h4>
-                   <div class="maru">
-                   <img src="sozai/notepc_css.png">
-                   </div>
-                    <h4>自由な働き方<br>
-                    自由な生き方を。</h4>
-                    
-                    <p><br>フリーランスとして、世界中で活躍してください。
-                    自分で仕事を請けて、好きな時に働き、好きな時に遊ぶ。
-                    <span class="word-yellow">本当の自由を手に入れてください。</span>
-                    </p>
-                    
-                </div>
-                <div class="col-md-4">
-                   <h4>就職、転職</h4>
-                   <div class="maru">
-                   <img src="sozai/candy_notepc.png">
-                   </div>
-                   <h4>内定までフルサポート</h4>
-                    
-                    <p><br>
-                      弊社は<span class="word-yellow">有料職業紹介事業の認可を受けております。</span>
-                    弊社に登録されている約50社以上の中から、
-                    あなたにあった企業を紹介させて頂き、
-                    <span class="word-yellow">内定までフルサポートさせて頂きます。</span>
-                    </p>
-                    
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="gazou" src="sozai/356681_615.jpg">
+                        <h2>紙タバコが要らない？</h2>
+                        <p>
+                            IQOSは電子タバコです。マルボーロが2500億円を掛けて開発した、有害物質の無いタバコです。「ヒートスティク型タバコ」と呼ばれて電気加熱でタバコを加熱します。煙の出ないタバコとして喫煙家からは注目を集めています。
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="gazou" src="sozai/normal2.jfif">
+                        <H2>煙たがられる煙は？</H2>
+                        <p>
+                            電子タバコの有用性と言えば、なんと言っても煙が出ないというところでしょう！あの嫌な感じの煙ともおさらば！電子タバコは熱するだけなので、燃えカスも出ない。しかも健康に害する副流煙も出ないので回りに迷惑を掛けない！
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="gazou" src="sozai/tale.jpg">
+                        <H2>タールによって黄ばみもなくなる？</H2>
+                        <p>タバコを吸って気がつかないうちに服が黄色くなったり、壁が黄ばんできたりという事はないですか？その根源のタールも電子タバコならうつりません。基本的に只の煙なので黄ばみの元のタールも出ません。これは愛煙家にとって朗報ですね！</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    </div>
-
-    <!-- Contact Section -->
-    <div class="about5_bg">
-    <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2 class="ookii">カリキュラム</h2>
-                <img src="sozai/bootlogo.png">
-                <p class="curriculum_text">
-                WEB業界、制作会社の一線で即戦力になれるよう、カリキュラムを組んでいます。<br>
-                他のITスクール系とは違い実践中心、座学ではなく、とにかく手を動かすことで身につきます。<br>
-                通常のスクールなら3ヶ月から4ヶ月掛けて学ぶカリキュラムを凝縮しました。<br>
-                <span>卒業後はすぐに月収30万円以上稼げるエンジニアを目指します！</span>
-                </p>
-
-                <table class="table table-condensed about_table">
-                      <tr class="success">
-                          <td>1章</td>
-                          <td>HTML+CSS基礎</td>
-                      </tr>
-                      <tr>
-                          <td>1章課題</td>
-                          <td>HTMLスケッチ</td>
-                      </tr>
-                      <tr class="success">
-                          <td>2章</td>
-                          <td>Illstrator+Photoshop</td>
-                      </tr>
-                      <tr>
-                          <td>2章課題</td>
-                          <td>カンプ制作</td>
-                      </tr>
-                      <tr class="success">
-                          <td>3章</td>
-                          <td>Bootstrap</td>
-                      </tr>
-                      <tr>
-                          <td>&nbsp;</td>
-                          <td>Webサイト制作</td>
-                      </tr>
-                      <tr>
-                          <td>&nbsp;</td>
-                          <td>レスポンシブサイト制作</td>
-                      </tr>
-                      <tr>
-                          <td>3章課題</td>
-                          <td>Bootstrapサイト構築</td>
-                      </tr>
-                 </table>
+    <section id="jptabaco">
+        <div class="backshiro">
+            <h1 class="taitorumoji text-center">日本の電子たばこ</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="yen" src="sozai/normal.jfif">
+                        <H2>安心安全日本電子タバコ</H2>
+                        <p>やっぱり日本製！という事で国内で発売されている日本産の電子タバコに焦点を当てて見たいと思います。IQUS（アイコス）とは違い、熱で水蒸気を発生させる方式を国内のメーカーは発表しています。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="yen" src="sozai/friembar_edited.jpg">
+                        <H2>フレンバー</H2>
+                        <p>電子タバコで国内で扱ってる電子タバコメーカーとして有名な部類に入ります。まず初めに何を購入したら良いかと思ったら、お試し間隔でこののフレンバーを手に取ってはいかがでしょうか？標準的な電子タバコならコレ！種類が豊富でフレーバーな様々な味わいが楽しめます。電子タバコも吸い過ぎには注意です。</p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="yen" src="sozai/VP-japan_edited.jpg">
+                        <H2>VP</H2>
+                        <p>このVPというメーカーは国産にこだわって、広告も日本の名所を多用し、日本ブランドを多用しています。アトマイザーの種類が豊富で色々な感じでタバコが楽しめそうです。また高級感のあるアトマイザーはコレクターアイテムとして一つ持っていると高級感があります。<span class="word-yellow">キャッチフレーズは「次世代の電子タバコVPの時代が来た！」です。</span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    </div>
-
-    <!-- FAQ -->
-    
-     <div class="about6_bg">
-      <div class="haikei">
-        <section id="download2" class="text-center">
-            <div class="download-section">
-                <div class="container">
-                <div class="about6">
-                  <h2 class="ookii">FAQ</h2>
-                  <h4 class="faq_text2">カリキュラムについて</h4>
-                      <div class="col-md-6">
-                        <div class=" faq_text">
-                        <p><span>未経験者でも参加できますか？</span><br>
-                        個別学習になっていますので、自分のペースで進めることが可能です。
-                        わからないことは、すぐに質問し解決できる環境を用意しています。<br>
-                        &nbsp;<br>
-                        &nbsp;<br>
-                        </p>
-                      </div>
-                      </div>
-
-                      <div class="col-md-6">
-                        <div class=" faq_text">
-                        <p><span>プログラミングコースはありますか？</span><br>
-                        本カリキュラムはフロントエンド部分が中心になっています。
-                        プログラム（バックエンド）だけを表面的に覚えてもフリーランスとして</br>
-                        やっていけません。</br>
-                        今後はプログラミングを含めたコースも予定しています。
-                        </p>
-                      
-                        </div>
-                      </div>
-                    <div class="clafix"></div>
-                      <h4 class="faq_text2">卒業後について</h4>
-                        <div class="col-md-6">
-                        <div class=" faq_text">
-                          <p><span>業務委託はどれくらい稼げますか？</span><br>
-                                案件により幅があります。
-                                実力次第で50万円以上の高額案件も獲得可能です。</p>
-                        </div>
-                        </div>
-
-                        <div class="col-md-6">
-                        <div class="faq_text">
-                           <p><span>延長は可能ですか？</span><br>
-                           宿泊費のみの追加で可能ですが、人数によってできない場合もございます。<br></p>
-                        </div>
-                        </div>
-                        <div class="clafix"></div>
-                          <h4 class="faq_text2">その他</h4>
-                              <div class="col-md-6">
-                              <div class="faq_text">
-                                <p><span>支払い方法は何ですか？</span><br>
-                                  PayPalでのクレジットカード払いと銀行振込の2種から選べます。</p>
-                              </div>
-                              </div>
-                              <div class="col-md-6">
-                              <div class="faq_text">
-                               <p><span>分割払いは可能ですか？</span><br>
-                               一括支払いのみとなりますがクレジットカード決済後、<br>
-                               ご利用のカード会社で分割払いやリボハ払いにご変更いただくことは可能です。</p>
-                              </div>
-                              </div>
-                              <div class="clafix"></div>
-                              </div>
-                              </div>
-                            
-
-                              <a href="tel:033309320" class="myButton2">電話でのご質問はこちら<i class="fa fa-phone"></i> 03-4330-9320</a>
-
-                              <p><a class="page-scroll myButton" href="form.html">今すぐエントリー</a></p>
-
-                              </div>
-                          </section>
-                        </div>
-                      </div>
-
-  <section id="entry" class="content-section text-center">
-     <div class="download-section2">
-       <div class="container">
-          <div class="entry_text">
-           <h2 class="ookii">エントリー</span></h2>
-
-          <div class="col-md-8 col-md-offset-2">
-             <h3 class="kage">参加条件</span></h3>
-             <p>MacPCを持参出来る方<br>
-                20歳以上<br>
-                学習意欲のある方</p>
-             <h3 class="kage">参加費用</span></h3>
-             <h4 class="daidai"><i class="fa fa-h-square "></i>　ホテル個室滞在型</h4>
-
-             <table class="table table-condensed about_table">
-                  <tr class="warning">
-                       <td>&nbsp;</td>
-                       <td>参加費用</td>
-                  </tr>
-                  <tr>
-                       <td>ホテル宿泊付き</td>
-                       <td>48万円 （税抜き）</td>
-                  </tr>
-              </table>
-
-
-             <h4 class="daidai"> <i class="fa fa-home"></i> シェアハウス型</h4>
-             <table class="table table-sondensed about_table">
-                  <tr class="warning">
-                     <td>&nbsp;</td>
-                     <td>参加費用</td>
-                  </tr>
-                  <tr>
-                    <td>シェアハウス<br>共同生活</td>
-                    <td>35万円（税抜き)</td>
-                  </tr>
-                  
-               </table>
-
-               <h4 class="daidai"> <i class="fa fa-child"></i> 宿泊フリープラン</h4>
-                    <p>*ご自身で自由に手配していただくプランです。</p>
-
-               <table class="table table-condensed about_table">
-                    <tr class="warning">
-                        <td>&nbsp;</td>
-                        <td>参加費用</td>
-                    </tr>
-                    <tr>
-                         <td>完全フリー滞在</td>
-                         <td>29万円(税抜き)<br>ABC</td>
-                    </tr>
-                </table>
-
-                <h3 class="kage">選考フロー</h3>
-                   <p class="entry_box">フォームからエントリー</p>
-                   <i class="fa fa-sort-desc fa-3x"></i>
-                   <p class="entry_box">Skypeにてオンライン面接 or 説明会</p>
-                   <i class="fa fa-sort-desc fa-3x"></i>
-                   <p class="entry_box">合格通知</p>
-                   <i class="fa fa-sort-desc fa-3x"></i>
-                   <p class="entry_box">ご入金</p>
-                 <hr>
-              </div>
-
-              <p><a class="page-scroll myButton" href="form.html">今すぐエントリー</a></p>
-
-
-              </div>
-              </div>
-              </div>
-
-          </section>
-
-
-     <!-- fotter -->
-           <footer>
-             <div class="container">
-                <div class="banner">
-                <ul>
-                    <li><a href="http://cajon.co.jp/webcon_lp/" target="_blank"><img src="sozai/webcon.png" alt=""></a></li>
-                    <li><a href="http://cajon.co.jp/webcon_seika/" target="_blank"><img src="sozai/webcon2.png" alt=""></a></li>
-                    <li><a href="http://cajon.co.jp/blog/" target="_blank"><img src="sozai/blog.jpg" alt=""></a></li>
-                    <li><a href="http://cajon.co.jp/web_produce/" target="_blank"><img src="sozai/web_p.png" alt=""></a></li>
-                    <li><a href="http://cajon.co.jp/seo_lp/" target="_blank"><img src="sozai/seo2.png" alt=""></a></li>
-                 </ul>
-               </div>
-              </div>
-
-              <div class="clafix"></div>
-              <div class="container text-center">
-                <p class="hitori">Copyright &copy; Cajon Inc 2015 | 石垣島ブートキャンプ</p>
+    <section id="kakaku">
+        <div class="backshiro">
+            <h1 class="taitorumoji text-center">価格</h1>
+            <div class="container">
+                <H2>VPの料金</H2>
+                  <div calss="table-responsive">
+                    <table border="1" width="950" border="0" cellspacing="0" cellpadding="0" frame="Void" style=" overflow-x:hidden;"" class="table table-striped table-bordered table-hover table-condensed">
+                      <tr align="center" valign="bottom" class="img">
+                          <th width="165">&nbsp;</th>
+                          <td><img src="http://www.rakuten.ne.jp/gold/vp-japan/lib/item/magic02/magic02_spc_gf01.jpg" width="21" height="216"></td>
+                         <td><img src="http://www.rakuten.ne.jp/gold/vp-japan/lib/item/magic02/magic02_spc_gf02.jpg" width="24" height="271"></td>
+                         <td><img src="http://www.rakuten.ne.jp/gold/vp-japan/lib/item/magic02/magic02_spc_gf03_zero.jpg"></td>
+                         <td><img src="http://www.rakuten.ne.jp/gold/vp-japan/lib/item/magic02/magic02_spc_gf04.jpg" width="28" height="278"></td>
+                      </tr>
+                      <tr valign="middle">
+                          <th height="45">商品名</th>
+                          <td>VP oneスターターセット</td>
+                          <td>VP Magicコンプリートセット</td>
+                          <td>VP ZEROコンプリートセット</td>
+                          <td>aspireプレミアムキット</td>
+                      </tr>
+                      <tr valign="middle">
+                          <th height="45">ブランド</th>
+                          <td>VP Japan</td>
+                          <td>VP Japan</td>
+                          <td>VP Japan</td>
+                          <td>aspire(アスパイア)</td>
+                      </tr>
+                      <tr>
+                          <th height="45">メーカー希望小売価格</th>
+                         <td>2,800円（税別）</td>
+                         <td>9,800円（税別）</td>
+                         <td>13,880円（税別）</td>
+                         <td>17,000円（税別）</td>
+                      </tr>
+                  </table>
                 </div>
-            </footer>
+
+
+                <h2>フレンバー</h2>
+                <div class="ryoukin">
+                    <img class="kakushuku" src="sozai/06031958_575162e0841aa.jpg">
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <div class="hanbai"><b>販売価格 : 4,980円(税別)</b></div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <h2>iQos(アイコス)</h2>
+                <div class="ryoukin">
+                    <img class="kakushuku" src="sozai/iQOS（アイコス）.jpg">
+                    <div class="iqus-ryoukin">
+                        クーポンを使用すると、4000円引きなので、5980円。ちなみに2016年8月10日までです。
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <ul class="disp">
+            <li class="nigeru"<a href="#">HOME | </a></li>
+        <li class="nigeru"><a href="#">お申し込み | </a></li>
+        <li class="nigeru"><a href="#">お問い合わせ</a></li>
+        
+      </ul>
+          <div class="mannakatyuuou">
+            Copyright©:ebifurai55
           </div>
-        </div>
-    </header>
+
+      </footer>
 
 
+<!-- jQuery -->
+        <script src="js/jquery.js"></script>
+        
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+        
+        <!-- <script src="js/bootstrap.js"></script> -->
+        
+        <!-- Plugin JavaScript -->
+        <script src="js/jquery.easing.min.js"></script>
+        
+        <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&amp;sensor=false">
+        </script>
+
+        <script type="text/javascript">
+        $(function(){
+        $('a[href^=#]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+        });
+        });
+        </script>
 
 
-
-
-
-
-
-
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="js/jquery.easing.min.js"></script>
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
-
-    <!-- likeボタン -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=567809486669621&version=v2.0";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="js/grayscale.js"></script>
-
-
-</body>
-
-</html>
+</body></html>
